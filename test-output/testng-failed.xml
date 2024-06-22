@@ -5,7 +5,8 @@
     <classes>
       <class name="almosafeer.myTestCases">
         <methods>
-          <include name="checkTheLogoIsDisplay"/>
+          <include name="HotelSelection"/>
+          <include name="ChanageTheLanguageOfTheWebSitePrandomly"/>
           <include name="mySetUp"/>
         </methods>
       </class> <!-- almosafeer.myTestCases -->
