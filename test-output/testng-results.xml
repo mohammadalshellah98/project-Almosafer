@@ -1,28 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
+<testng-results ignored="6" total="11" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-22T17:21:11 EET" name="Default suite" finished-at="2024-06-22T17:21:41 EET" duration-ms="30753">
+  <suite started-at="2024-06-23T22:12:33 EET" name="Default suite" finished-at="2024-06-23T22:13:17 EET" duration-ms="44355">
     <groups>
     </groups>
-    <test started-at="2024-06-22T17:21:11 EET" name="Default test" finished-at="2024-06-22T17:21:41 EET" duration-ms="30753">
+    <test started-at="2024-06-23T22:12:33 EET" name="Default test" finished-at="2024-06-23T22:13:17 EET" duration-ms="44355">
       <class name="almosafeer.myTestCases">
-        <test-method is-config="true" signature="mySetUp()[pri:0, instance:almosafeer.myTestCases@4648ce9]" started-at="2024-06-22T17:21:11 EET" name="mySetUp" finished-at="2024-06-22T17:21:19 EET" duration-ms="7968" status="PASS">
+        <test-method is-config="true" signature="mySetUp()[pri:0, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:12:33 EET" name="mySetUp" finished-at="2024-06-23T22:12:39 EET" duration-ms="6870" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mySetUp -->
-        <test-method signature="ChanageTheLanguageOfTheWebSitePrandomly()[pri:1, instance:almosafeer.myTestCases@4648ce9]" started-at="2024-06-22T17:21:19 EET" name="ChanageTheLanguageOfTheWebSitePrandomly" finished-at="2024-06-22T17:21:27 EET" duration-ms="8219" status="PASS">
+        <test-method signature="ChanageTheLanguageOfTheWebSitePrandomly()[pri:1, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:12:40 EET" name="ChanageTheLanguageOfTheWebSitePrandomly" finished-at="2024-06-23T22:12:41 EET" duration-ms="1695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ChanageTheLanguageOfTheWebSitePrandomly -->
-        <test-method signature="HotelSelection()[pri:2, instance:almosafeer.myTestCases@4648ce9]" started-at="2024-06-22T17:21:27 EET" name="HotelSelection" finished-at="2024-06-22T17:21:28 EET" duration-ms="832" status="PASS">
+        <test-method signature="HotelSelection()[pri:2, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:12:41 EET" name="HotelSelection" finished-at="2024-06-23T22:12:46 EET" duration-ms="4554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HotelSelection -->
-        <test-method signature="selectNumberOfPeople()[pri:3, instance:almosafeer.myTestCases@4648ce9]" started-at="2024-06-22T17:21:28 EET" name="selectNumberOfPeople" finished-at="2024-06-22T17:21:41 EET" duration-ms="13677" status="PASS">
+        <test-method signature="selectNumberOfPeople()[pri:3, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:12:46 EET" name="selectNumberOfPeople" finished-at="2024-06-23T22:12:56 EET" duration-ms="9966" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectNumberOfPeople -->
+        <test-method signature="checkThePageFullyLoaded()[pri:4, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:12:56 EET" name="checkThePageFullyLoaded" finished-at="2024-06-23T22:13:12 EET" duration-ms="16035" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkThePageFullyLoaded -->
+        <test-method signature="SortItems()[pri:5, instance:almosafeer.myTestCases@61526469]" started-at="2024-06-23T22:13:12 EET" name="SortItems" finished-at="2024-06-23T22:13:17 EET" duration-ms="5148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SortItems -->
       </class> <!-- almosafeer.myTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

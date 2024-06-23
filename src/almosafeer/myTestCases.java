@@ -2,17 +2,22 @@ package almosafeer;
 
 import java.time.Duration;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+
+import net.bytebuddy.implementation.bytecode.Throw;
 
 public class myTestCases {
 
@@ -145,12 +150,35 @@ public class myTestCases {
 		searchclick.click();
 	}
 
-	@Test
+	@Test(priority = 4)
 	public void checkThePageFullyLoaded() {
-		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(60));
-		
-		By results = By.xpath("//span[@data-testis = 'HotelSearchResult__resultsFoundCount']");
-		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofMinutes(1));
+		WebElement results = wait.until(ExpectedConditions
+				.presenceOfElementLocated(By.xpath("//span[@data-testid='HotelSearchResult__resultsFoundCount']")));
+		Assert.assertEquals(results.getText().contains("found") || results.getText().contains("وجدنا"), true);
 	}
+
+	@Test(priority = 5)
+	public void SortItems() throws InterruptedException {
+		WebElement LowestpriceButton = driver
+				.findElement(By.xpath("//button[@data-testid='HotelSearchResult__sort__LOWEST_PRICE']"));
+		LowestpriceButton.click();
+
+		Thread.sleep(4000);
+		WebElement priceContainer = driver.findElement(By.cssSelector(".sc-htpNat.KtFsv.col-9"));
+		List<WebElement> Prices = priceContainer.findElements(By.className("Price__Value"));
+
+		System.out.println(Prices.size());
+
+		String firstprice = Prices.get(0).getText();
+		String lastprice = Prices.get(Prices.size() - 1).getText();
+
+		int firstpriceasINT = Integer.parseInt(firstprice);
+		int lastpriceasINT = Integer.parseInt(lastprice);
+
+		Assert.assertEquals(firstpriceasINT < lastpriceasINT, true);
+	}
+	
+	@Test(priority = 6)
 
 }

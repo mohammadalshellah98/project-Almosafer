@@ -5,9 +5,8 @@
     <classes>
       <class name="almosafeer.myTestCases">
         <methods>
-          <include name="HotelSelection"/>
-          <include name="ChanageTheLanguageOfTheWebSitePrandomly"/>
           <include name="mySetUp"/>
+          <include name="SortItems"/>
         </methods>
       </class> <!-- almosafeer.myTestCases -->
     </classes>
